@@ -1,0 +1,25 @@
+:root {
+  --clr-primary-red: hsl(0, 100%, 74%);
+  --clr-primary-green: hsl(154, 59%, 51%);
+  --clr-accent-blue: hsl(248, 32%, 49%);
+  --clr-neutral-dkblue: hsl(249, 10%, 26%);
+  --clr-neutral-grayishblue: hsl(246, 25%, 77%);
+
+  --ff-regular: "Poppins", sans-serif;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-regular);
+}
