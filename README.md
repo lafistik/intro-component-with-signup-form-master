@@ -23,9 +23,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./Screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/lafistik/intro-component-with-signup-form-master]
+- Live Site URL: [https://lafistik.github.io/intro-component-with-signup-form-master]
