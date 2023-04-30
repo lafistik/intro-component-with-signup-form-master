@@ -1,11 +1,13 @@
 :root {
-  --clr-primary-red: hsl(0, 100%, 74%);
-  --clr-primary-green: hsl(154, 59%, 51%);
-  --clr-accent-blue: hsl(248, 32%, 49%);
-  --clr-neutral-dkblue: hsl(249, 10%, 26%);
-  --clr-neutral-grayishblue: hsl(246, 25%, 77%);
+  --clr-red: #ff7a7a;
+  --clr-green: #38cc8c;
+  --clr-blue: hsl(248, 32%, 49%);
+  --clr-dkblue: hsl(249, 10%, 26%);
+  --clr-gray-blue: hsl(246, 25%, 77%);
 
-  --ff-regular: "Poppins", sans-serif;
+  --fs-reg: 1rem;
+
+  --ff-reg: "Poppins", sans-serif;
   --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
@@ -21,5 +23,212 @@
 }
 
 body {
-  font-family: var(--ff-regular);
+  min-height: 100vh;
+  font-family: var(--ff-reg);
+  font-size: var(--fs-reg);
+  background-color: var(--clr-red);
+  background-image: url("./images/bg-intro-mobile.png");
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 6rem 1.5rem 4rem;
+  max-width: 37.125rem;
+}
+
+/* LEFT SECTION */
+
+.left {
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+}
+
+.left p {
+  line-height: 1.7;
+}
+
+/* RIGHT SECTION */
+
+.right {
+  margin-top: 4rem;
+}
+
+.right .banner {
+  color: #fff;
+  background-color: var(--clr-blue);
+  text-align: center;
+  border-radius: 8px;
+  padding-block: 1.125rem;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.right .banner h2 {
+  font-size: 1rem;
+  font-weight: var(--fw-400);
+  width: 60%;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.bold-text {
+  font-weight: var(--fw-700);
+}
+
+/* FORM */
+
+.form-group {
+  background-color: #fff;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+form div {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+form input {
+  color: var(--clr-dkblue);
+  font-weight: var(--fw-600);
+  font-family: var(--ff-reg);
+  padding: 1.25rem 1.125rem;
+  width: 100%;
+  outline: none;
+
+  border: 1px solid rgb(223, 220, 220);
+  border-radius: 5px;
+}
+
+form input:focus {
+  border: 1px solid var(--clr-dkblue);
+}
+
+.error-icon {
+  position: absolute;
+  top: 22.5%;
+  right: 7%;
+  display: none;
+}
+
+.error-text,
+.wrong-email {
+  font-size: 0.75rem;
+  text-align: right;
+  margin-top: 0.25rem;
+  color: var(--clr-red);
+  display: none;
+}
+
+/* BUTTON */
+
+.btn {
+  color: #fff;
+  background-color: var(--clr-green);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 1.25rem 0rem 1rem;
+  margin-bottom: 1rem;
+
+  text-transform: uppercase;
+  font-weight: var(--fw-700);
+  letter-spacing: 1px;
+
+  border-bottom: 4px solid #32b87e;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #88e0ba;
+  border-bottom-color: #84d4b2;
+}
+
+.small-text {
+  text-align: center;
+  font-size: 0.75rem;
+  display: block;
+  width: 92%;
+  margin-inline: auto;
+  color: var(--clr-gray-blue);
+}
+
+.terms {
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.15s ease-in;
+}
+
+.terms:hover,
+.terms:active {
+  color: #cc6262;
+}
+
+.form-group p span {
+  color: var(--clr-red);
+}
+
+.invalid {
+  border-color: var(--clr-red);
+  color: var(--clr-red);
+}
+
+.invalid:focus {
+  border-color: var(--clr-red);
+  color: var(--clr-red);
+}
+
+input.invalid::placeholder {
+  color: var(--clr-red);
+}
+
+@media screen and (min-width: 75em) {
+  .container {
+    max-width: 69.375rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 4.5rem;
+  }
+
+  .left {
+    flex: 0 1 auto;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1.15;
+  }
+
+  .right {
+    flex: 0 0 49%;
+    margin-top: 0;
+  }
+
+  .right .banner h2 {
+    width: 100%;
+  }
+
+  .form-group {
+    padding: 2.25rem;
+  }
 }
