@@ -199,6 +199,10 @@ input.invalid::placeholder {
 }
 
 @media screen and (min-width: 75em) {
+  body {
+    background-image: url("./images/bg-intro-desktop.png");
+  }
+
   .container {
     max-width: 69.375rem;
 
