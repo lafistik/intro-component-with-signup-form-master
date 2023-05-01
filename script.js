@@ -1,11 +1,11 @@
-const form = document.querySelector(".form");
-const inputs = document.querySelectorAll("input");
-const errorIcons = document.querySelectorAll(".error-icon");
-const errorText = document.querySelectorAll(".error-text");
-const emailInput = document.querySelector(".email");
-const wrongEmail = document.querySelector(".wrong-email");
-const validRegex =
-  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+const form = document.querySelector(".form"),
+  inputs = document.querySelectorAll("input"),
+  errorIcons = document.querySelectorAll(".error-icon"),
+  errorText = document.querySelectorAll(".error-text"),
+  emailInput = document.querySelector(".email"),
+  wrongEmail = document.querySelector(".wrong-email"),
+  validRegex =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 inputs.forEach(function (node, i) {
   node.addEventListener("blur", function () {
